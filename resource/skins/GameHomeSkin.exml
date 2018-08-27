@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameHomeSkin" maxWidth="640" maxHeight="1136" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bgImg" source="bg2_jpg" left="0" right="0" top="0" bottom="0" />
+	<e:Group id="mainCon" left="0" right="0" top="0" bottom="0">
+		<e:Image id="moonImg" source="moon_png" horizontalCenter="0" y="40" />
+		<e:Label id="titleLab" text="STICK\nHERO" y="78" textColor="0x1b2128" size="126" fontFamily="Verdana" textAlign="center" horizontalCenter="0" bold="true"/>
+		<e:Group id="startBtn" width="200" height="200" y="550" touchChildren="false" horizontalCenter="0" anchorOffsetX="100" anchorOffsetY="100">
+			<e:Rect width="200" height="200" x="0" y="0" fillColor="0xe54155" ellipseWidth="200" ellipseHeight="200"/>
+			<e:Label text="开始" horizontalCenter="0" verticalCenter="0" fontFamily="黑体" size="48"/>
+		</e:Group>
+		<e:Image id="rect" source="stick" horizontalCenter="0" width="200" height="300" scale9Grid="1,1,2,2" bottom="0" />
+		<e:Image id="selectBtn" source="btn2" horizontalCenter="0" anchorOffsetX="75" anchorOffsetY="74"  bottom="122"/>
+	</e:Group>
+</e:Skin>
