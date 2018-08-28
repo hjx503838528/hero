@@ -15,7 +15,7 @@ var GameData = (function (_super) {
     __extends(GameData, _super);
     function GameData() {
         var _this = _super.call(this) || this;
-        _this.index = 1; //第几个英雄
+        _this.index = 0; //第几个英雄
         _this.grade = 0; //分数
         _this.bestGrade = 0; //最佳分数
         return _this;

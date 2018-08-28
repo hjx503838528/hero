@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,bg1_jpg,bg2_jpg,bg3_jpg,bg4_jpg,bg5_jpg,game_json,hero1_json,moon_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,description_json,gameEui_json,hero_png,hero_json",
+			"keys": "button_down_png,button_up_png,checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,bg1_jpg,bg2_jpg,bg3_jpg,bg4_jpg,bg5_jpg,hero1_json,moon_png,selected_png,border_png,header_png,thumb_pb_png,track_pb_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,track_sb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,description_json,gameEui_json,hero_png,hero_json,game_json",
 			"name": "preload"
 		}
 	],
@@ -60,12 +60,6 @@
 			"url": "assets/images/bg5.jpg",
 			"type": "image",
 			"name": "bg5_jpg"
-		},
-		{
-			"url": "assets/images/game.json",
-			"type": "sheet",
-			"name": "game_json",
-			"subkeys": "btn2,hero01,hero02,hero03,hero04,home,redDot,restart,scoreBg,stick,wx_hy,wx_pyq"
 		},
 		{
 			"url": "assets/images/hero1.json",
@@ -181,6 +175,12 @@
 			"url": "assets/images/hero.json",
 			"type": "json",
 			"name": "hero_json"
+		},
+		{
+			"name": "game_json",
+			"type": "sheet",
+			"url": "assets/images/game.json",
+			"subkeys": "hero04,home,redDot,restart,scoreBg,stick,btn2,hero01,hero02,hero03,hero05,wx_hy,wx_pyq"
 		}
 	]
 }

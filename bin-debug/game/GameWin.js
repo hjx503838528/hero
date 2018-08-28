@@ -15,7 +15,7 @@ var GameWin = (function (_super) {
     __extends(GameWin, _super);
     function GameWin() {
         var _this = _super.call(this) || this;
-        _this.stickH = 6;
+        _this.stickH = 0;
         _this.lv = 10;
         _this.isDouble = false;
         _this.isCilck = true;
@@ -46,7 +46,7 @@ var GameWin = (function (_super) {
     GameWin.prototype.timerFunc = function () {
         var maxH = this.stageH - 300;
         if (this.stickH < maxH) {
-            this.stickH += 8;
+            this.stickH += 10;
             this.stick.height = this.stickH;
         }
     };
@@ -186,8 +186,8 @@ var GameWin = (function (_super) {
             //移出
             var data = _this.randomX(_this.lv, 70, 100);
             _this.rightRect.width = data.width;
-            egret.Tween.get(_this.red).to({ x: data.x + _this.rightRect.width / 2 - _this.red.width / 2 }, 300);
-            egret.Tween.get(_this.rightRect).to({ x: data.x }, 300).call(function () {
+            egret.Tween.get(_this.red).to({ x: data.x + _this.rightRect.width / 2 - _this.red.width / 2 }, 500);
+            egret.Tween.get(_this.rightRect).to({ x: data.x }, 500).call(function () {
                 _this.touchEnabled = true;
             }, _this);
         }, this);

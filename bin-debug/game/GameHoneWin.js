@@ -55,7 +55,7 @@ var GameHoneWin = (function (_super) {
                     StageUtils.ins().getUIStage().addChild(new GameWin);
                 }
                 else if (target == this.selectBtn) {
-                    GameData.ins().index = GameData.ins().index < 4 ? GameData.ins().index + 1 : 1;
+                    GameData.ins().index = GameData.ins().index < 4 ? GameData.ins().index + 1 : 0;
                     console.log("第" + GameData.ins().index + "人物");
                     this._mc.setIndex(GameData.ins().index);
                     this._mc.x = StageUtils.ins().getWidth() / 2 - this._mc.width / 2;

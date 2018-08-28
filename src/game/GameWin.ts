@@ -23,7 +23,7 @@ class GameWin extends eui.Component {
 	public stageW: number;
 	public stageH: number;
 	public timer: egret.Timer;
-	private stickH: number = 6;
+	private stickH: number = 0;
 	private lv: number = 10;
 	private isDouble: boolean = false;
 	private isCilck: boolean = true;
@@ -61,7 +61,7 @@ class GameWin extends eui.Component {
 	private timerFunc(): void {
 		let maxH: number = this.stageH - 300;
 		if (this.stickH < maxH) {
-			this.stickH += 8;
+			this.stickH += 10;
 			this.stick.height = this.stickH;
 		}
 	}
@@ -209,8 +209,8 @@ class GameWin extends eui.Component {
 			//移出
 			let data: { width, x } = this.randomX(this.lv, 70, 100);
 			this.rightRect.width = data.width;
-			egret.Tween.get(this.red).to({ x: data.x + this.rightRect.width / 2 - this.red.width / 2 }, 300);
-			egret.Tween.get(this.rightRect).to({ x: data.x }, 300).call(() => {
+			egret.Tween.get(this.red).to({ x: data.x + this.rightRect.width / 2 - this.red.width / 2 }, 500);
+			egret.Tween.get(this.rightRect).to({ x: data.x }, 500).call(() => {
 				this.touchEnabled = true;
 			}, this)
 		}, this);
