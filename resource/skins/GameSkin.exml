@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="GameSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
-        xmlns:tween="egret.tween.*">
-    <w:Declarations>
-        <tween:TweenGroup id="a">
-            <tween:TweenItem target="{stick}">
-                <tween:Set/>
-                <tween:To duration="500">
-                    <tween:props>
-                        <e:Object rotation="{90}" />
-                    </tween:props>
-                </tween:To>
-            </tween:TweenItem>
-        </tween:TweenGroup>
-    </w:Declarations>
+<e:Skin class="GameSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
     <e:Image id="bgImg" left="0" right="0" top="2" bottom="-2" source="bg3_jpg" touchEnabled="false" />
     <e:Image id="moonImg" source="moon_png" horizontalCenter="0" y="40" touchEnabled="false" x="0" scaleX="1" scaleY="1" />
     <e:Group id="gradeCon" horizontalCenter="0" y="50" touchChildren="false" x="220" scaleX="1" scaleY="1">
@@ -23,8 +10,6 @@
              touchEnabled="false" scaleX="1" scaleY="1"  bottom="0"/>
     <e:Image id="rightRect" source="stick" width="172" height="300" scale9Grid="1,1,2,2" x="342"
              touchEnabled="false" scaleX="1" scaleY="1"  bottom="0"/>
-
-
     <e:Rect id="stick" width="6" height="0" x="150" bottom="295"
             touchEnabled="false" y="833"  anchorOffsetX="6" fillColor="0x000000"/>
     <e:Rect id="red" width="12" height="12" x="429" scaleY="1" fillColor="0xff0000" y="836" touchEnabled="false"
