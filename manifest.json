@@ -9,7 +9,12 @@
 		"js/game.min_45aa06f6.js"
 	],
 	"game": [
+<<<<<<< HEAD
 		"js/default.thm_7d139dee.js",
 		"js/main.min_d0c057d6.js"
+=======
+		"js/default.thm_e76a486f.js",
+		"js/main.min_f1dee747.js"
+>>>>>>> 333
 	]
 }
